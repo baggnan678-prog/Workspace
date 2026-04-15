@@ -1,3 +1,3 @@
 import analyseMdp 
-mdp=input("entrer un mot de passe : ")
+mdp=input("entrer un mot de passe robuste : ")
 analyseMdp.score(mdp)

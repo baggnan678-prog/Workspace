@@ -1,0 +1,10 @@
+depenses = [1500, 2000, 500, 3000, 2500, 1000]
+total = sum(depenses)
+moyenne = total/len(depenses)
+print(f"La première dépense est de {depenses[0]} et la dernière dépense est de {depenses[5]} et le total des dépenses est de {total} et la moyenne des dépenses est de {moyenne}")
+depenses.append(1800)
+print(f"Voici le tableau des dépenses après ajout de 1800 {depenses}")
+depenses.remove(500)
+print(f"Voici le tableau des dépenses après suppression de 500 {depenses}")
+depenses.sort()
+print(f"Voici le tableau des dépenses trié {depenses}")

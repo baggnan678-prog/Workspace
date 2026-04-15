@@ -8,4 +8,4 @@ print(f"Les notes suprieures ou égales à 5 sont : {list(a["note"] for a in sup
 inf4=[a["note"] for a in notes if a["note"]<4]
 print(f"Les notes infrieures ou égales à 4 sont : {inf4}")
 print(f"La pire note obtenue est {min([a["note"] for a in notes])}")
-print(f"le nom des clients ayant donné de faibles notes sont : {list(a["prenom"] for a in notes if a["note"]<4)}")
+print(f"le nom des clients ayant donné de faibles notes sont : {list(a["prenom"] for a in notes if a["note"]<4)}") 

@@ -1,20 +1,16 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-tx=[]
-ty=[]
-for i in np.arange(-5,5,0.5):
-    y=i**2+3*i+2
-    tx.append(i)
-    ty.append(y)
-plt.plot(tx,ty)
+x=np.arange(-5,5,0.5)
+y=x**2+3*x+2
+plt.plot(x,y)
 plt.title('Graphe de fonction')
 plt.xlabel('abcisse')
 plt.ylabel('ordonnée')
 plt.grid(True)
 plt.show()
 tx,ty=[],[]
-for i in np.arange(-5,5,0.5):
+for i in np.arange(-5,5,0.01):
     y=math.sin(i)
     tx.append(i)
     ty.append(y)

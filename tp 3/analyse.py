@@ -1,21 +1,20 @@
 import scipy
 def moyenne (d):
-    somme=0
-    for i in d:
-        somme+=i["note"]
-    return somme/len(d)
+    valeur=list(d.values())
+    return    sum(valeur)/len(d) 
+
 
 def moyenne_geo(d):
-    d=[a["note"] for a in d]
+    d=[a for a in d.values()]
     return scipy.stats.gmean(d)
 
-def meilleurNotation (d):
-    sup5=[a["note"] for a in d if a["note"]>5]
+def meilleurNotation(d):
+    sup5=[a for a in d.values() if a > 5]
     return sup5
 
 def mauvaiseNotation (d):
-    inf4=[a["note"] for a in d if a["note"]<4]
+    inf4=[a for a in d.values() if a<4]
     return inf4
 
 def pireNote (d):
-    return [a["prenom"] for a in d if a["note"]<3]
+    return [nom for nom , a in d.items() if a<4]

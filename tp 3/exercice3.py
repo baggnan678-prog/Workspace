@@ -1,4 +1,4 @@
-notation = [{"prenom":"Moussa","note":8},{"prenom":"Bitié","note":4},{"prenom":"Sogotele","note":1},{"prenom":"Ali","note":10},{"prenom":"Yirako","note":10},{"prenom":"Lala","note":1},{"prenom":"Irie","note":3},{"prenom":"Zirio","note":5},{"prenom":"Luffy","note":6},{"prenom":"Son","note":7},{"prenom":"Alicia","note":9},{"prenom":"Rene","note":4},{"prenom":"Sali","note":10},{"prenom":"Paco","note":3}]
+notation =  { "Moussa" :8 , "Bitié" :4 , "Sogotele" :1 , "Ali" :10 , "Yirako" :10 , "Lala" :1 , "Irie" :3 , "Zirio" :5 , "Luffy" :6 , "Son" :7 , "Alicia" :9 , "Rene" :4 , "Sali" :10 , "Paco" :3} 
 import analyse
 print(f"La moyenne est : {analyse.moyenne (notation)}")
 print(f"Les notes suprieures ou égales à 5 sont : {analyse.meilleurNotation(notation)}")

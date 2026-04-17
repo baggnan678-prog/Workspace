@@ -67,11 +67,9 @@ def score(mdp: str) -> None:
     s    = b - p
     ok   = check_password(mdp)
 
-    print("=" * 50)
     print(f"  Mot de passe      : {mdp}")
-    print(f"  Longueur          : {len(mdp)} caractère(s)")
+    print(f"  Longueur          : {len(mdp)} caractères")
     print(f"  Valide            : {'Oui' if ok else 'Non'}")
-    print("-" * 50)
     print(f"  Majuscules        : {upper_count(mdp)}")
     print(f"  Minuscules        : {lower_count(mdp)}")
     print(f"  Non-alphabétiques : {alphanum_count(mdp)}")
@@ -83,7 +81,7 @@ def score(mdp: str) -> None:
     print(f"  Nombre de points pour les non-alphabétiques : {sum(5 for c in mdp if ("@" in mdp or "!" in mdp or "$" in mdp))}")
     print(f"  Bonus             : +{b}")
     print(f"  Pénalité          : -{p}")
-    print(f"  ► Score final     : {s}")
+    print(f"  Score final     : {s}")
     if s>80:
         print("Mot de passe très fort")
     elif 80>s>=40:

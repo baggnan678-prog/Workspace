@@ -3,6 +3,7 @@ from collections import Counter
 SPECIAL_CHARS = "$@!"
 
 
+
 def check_password(mdp):
     if ("@" in mdp or "!" in mdp or "$" in mdp ) and any(c.isdigit() for c in mdp) and any(c.isupper() for c in mdp) and any(c.islower() for c in mdp) :
         return True
@@ -20,7 +21,6 @@ def upper_count(mdp: str) -> int:
 
 def alphanum_count(mdp: str) -> int:
     return sum(1 for c in mdp if not c.isalpha())
-
 
 def longest_upper(mdp: str) -> int:
     max_seq = cur_seq = 0

@@ -4,8 +4,7 @@
 # =============================================================================
 
 # On importe le module "random" qui permet de faire des opérations aléatoires
-# (comme mélanger une liste). Ce module fait partie de la bibliothèque standard
-# de Python, donc pas besoin de l'installer.
+# (comme mélanger une liste).
 import random
 
 

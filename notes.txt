@@ -1,0 +1,5 @@
+Ali;14
+Awa;16
+Moussa;9
+Fatou;12
+Issa;18
